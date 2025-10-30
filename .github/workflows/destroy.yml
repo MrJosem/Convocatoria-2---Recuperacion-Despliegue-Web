@@ -31,7 +31,7 @@ jobs:
               uses: hashicorp/setup-terraform@v3
 
             - name: Descargar .tfstate de Bucket S3
-              run: aws s3 cp s3://jose-manuel-bucket-tfstate/terraform.tfstate
+              run: aws s3 cp s3://jose-manuel-bucket-tfstate/terraform.tfstate terraform/terraform.tfstate
 
             - name: Iniciar Terraform
               working-directory: terraform
