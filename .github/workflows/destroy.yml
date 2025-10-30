@@ -1,0 +1,42 @@
+name: "Despliegue en Bucket S3 e infraestructura Terraform"
+on:
+    workflow_dispatch:
+        inputs:
+            environment:
+                type: choice
+                description: "Select the deployment environment"
+                options:
+                    - destroy
+jobs:
+    destroy:
+        if: ${{ github.event.inputs.environment == 'destroy' }}
+        runs-on: ubuntu-latest
+
+        env:
+            aws_region: us-east-1
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Configure AWS credentials
+              uses: aws-actions/configure-aws-credentials@v4
+              with:
+                    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                    aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                    aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
+                    aws-region: ${{ env.aws_region }}
+
+            - name: Set up Terraform
+              uses: hashicorp/setup-terraform@v3
+
+            - name: Descargar .tfstate de Bucket S3
+              run: aws s3 cp s3://jose-manuel-bucket-tfstate/terraform.tfstate
+
+            - name: Iniciar Terraform
+              working-directory: terraform
+              run: terraform init
+
+            - name: Destruir Terraform
+              working-directory: ./terraform
+              run: terraform destroy -auto-approve
