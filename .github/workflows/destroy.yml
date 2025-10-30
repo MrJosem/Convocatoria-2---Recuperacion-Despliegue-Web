@@ -1,4 +1,4 @@
-name: "Despliegue en Bucket S3 e infraestructura Terraform"
+name: "Destrucción de infraestructura Terraform"
 on:
     workflow_dispatch:
         inputs:
