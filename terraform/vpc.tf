@@ -30,6 +30,14 @@ resource "aws_internet_gateway" "router" {
   }
 }
 
+resource "aws_route" "prueba" {
+  route_table_id = aws_route_table.route_table.id
+  carrier_gateway_id = aws_internet_gateway.router.id
+  connection {
+    host = "0.0.0.0/0"
+  }
+}
+
 resource "aws_route_table" "route_table" {
   vpc_id = aws_vpc.vpc.id
 
