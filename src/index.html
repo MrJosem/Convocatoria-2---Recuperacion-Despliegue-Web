@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperación Tailwind final</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="space-y-20">
+    <!-- HEADER/NAV -->
+    <header class="flex flex-row items-center justify-around p-4 shadow-2xl">
+      <div class="flex flex-row items-center gap-4">
+        <img src="./img/logo.png" alt="Logo" class="animate-spin" />
+        <h2>Prime Properties</h2>
+      </div>
+
+      <nav class="flex flex-row items-center gap-6">
+        <a
+          href="#"
+          class="border-b-4 border-b-green-500 py-4 transition-all duration-200 hover:text-green-500"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="border-b-4 border-b-red-500 py-4 transition-all duration-200 hover:text-red-500"
+          >Services</a
+        >
+        <a
+          href="#"
+          class="border-b-4 border-b-yellow-500 py-4 transition-all duration-200 hover:text-yellow-500"
+          >About</a
+        >
+        <a
+          href="#"
+          class="border-b-4 border-b-blue-500 py-4 transition-all duration-200 hover:text-blue-500"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <!-- FIRST SECTION -->
+    <section class="mx-auto flex w-[75%] flex-col gap-4 p-4">
+      <b class="text-5xl font-bold"
+        >Premium Properties
+        <b class="font-bold text-green-500">Non-premium Prices</b></b
+      >
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias modi
+        itaque cumque nostrum ipsa fuga voluptatum alias? Enim harum accusantium
+        consequuntur quia iste ea velit! Vero vel voluptatum laudantium
+        quisquam!
+      </p>
+      <div class="flex flex-row items-center gap-4">
+        <a
+          href="#"
+          class="rounded-lg bg-green-500 px-6 py-3 text-white transition-all duration-200 hover:bg-green-300 hover:text-green-700"
+          >View Properties</a
+        >
+        <a
+          href="#"
+          class="rounded-lg bg-green-300 px-6 py-3 text-green-700 transition-all duration-200 hover:bg-green-500 hover:text-white"
+          >Explore Locations</a
+        >
+      </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section
+      class="mx-auto flex w-[75%] flex-col items-center justify-center gap-20 p-4"
+    >
+      <h2 class="text-4xl text-gray-500">Recent Properties</h2>
+      <div class="flex items-stretch gap-4 sm:flex-col lg:flex-row">
+        <div class="max-w-sm overflow-hidden rounded shadow-lg">
+          <img class="w-full" src="./img/home1.jpg" alt="Casa 1" />
+          <div class="px-6 py-4">
+            <div class="mb-2 text-xl font-bold">Orchid Villa</div>
+            <p class="text-base text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 px-6 pt-4 pb-2">
+            <b class="text-green-500">4,500,000€</b>
+            <div class="flex flex-row items-center gap-4 text-center">
+              <span
+                class="mr-2 mb-2 w-[70px] rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+                >7 Beds</span
+              >
+              <span
+                class="mr-2 mb-2 w-[80px] rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+                >7 Baths</span
+              >
+            </div>
+            <a
+              href="#"
+              class="w-[130px] rounded-4xl bg-green-500 px-1 py-1 text-center font-bold text-white transition-all duration-200 hover:bg-green-300 hover:text-green-700"
+              >View Property</a
+            >
+          </div>
+        </div>
+        <div class="max-w-sm overflow-hidden rounded shadow-lg">
+          <img class="w-full" src="./img/home2.jpg" alt="Casa 2" />
+          <div class="px-6 py-4">
+            <div class="mb-2 text-xl font-bold">Orchid Villa</div>
+            <p class="text-base text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 px-6 pt-4 pb-2">
+            <b class="text-green-500">4,500,000€</b>
+            <div class="flex flex-row items-center gap-4 text-center">
+              <span
+                class="mr-2 mb-2 w-[70px] rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+                >7 Beds</span
+              >
+              <span
+                class="mr-2 mb-2 w-[80px] rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+                >7 Baths</span
+              >
+            </div>
+            <a
+              href="#"
+              class="w-[130px] rounded-4xl bg-green-500 px-1 py-1 text-center font-bold text-white transition-all duration-200 hover:bg-green-300 hover:text-green-700"
+              >View Property</a
+            >
+          </div>
+        </div>
+        <div class="max-w-sm overflow-hidden rounded shadow-lg">
+          <img class="w-full" src="./img/home3.jpg" alt="Casa 3" />
+          <div class="px-6 py-4">
+            <div class="mb-2 text-xl font-bold">Orchid Villa</div>
+            <p class="text-base text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 px-6 pt-4 pb-2">
+            <b class="text-green-500">4,500,000€</b>
+            <div class="flex flex-row items-center gap-4 text-center">
+              <span
+                class="mr-2 mb-2 w-[70px] rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+                >7 Beds</span
+              >
+              <span
+                class="mr-2 mb-2 w-[80px] rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+                >7 Baths</span
+              >
+            </div>
+            <a
+              href="#"
+              class="w-[130px] rounded-4xl bg-green-500 px-1 py-1 text-center font-bold text-white transition-all duration-200 hover:bg-green-300 hover:text-green-700"
+              >View Property</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LUXURY SECTION -->
+    <section
+      class="z-10 relative flex h-[800px] w-full flex-col items-start justify-center gap-4 bg-[url(./img/luxury.jpg)] bg-no-repeat p-4"
+    >
+      <h2 class="text-3xl font-bold text-white">
+        Experience Luxury Like Never Before
+      </h2>
+      <p class="text-2xl text-white">50+ Exotic Locations Across The Globe</p>
+      <a
+        href="#"
+        class="border-2 border-white bg-transparent p-4 font-bold text-white transition-all duration-200 hover:bg-green-300 hover:text-green-700"
+        >EXPLORE LOCATIONS</a
+      >
+
+      <div class="absolute top-0 right-0 w-full h-full bg-black opacity-50 -z-10"></div>
+    </section>
+
+    <!-- CARDS 2 SECTION -->
+    <section
+      class="mx-auto flex w-full flex-col items-center justify-center gap-20 p-4"
+    >
+      <h2 class="text-4xl text-gray-500">Locations</h2>
+      <div class="flex items-stretch gap-4 sm:flex-col lg:flex-row">
+        <div class="max-w-sm overflow-hidden rounded shadow-lg">
+          <img class="w-full" src="./img/newyork.jpg" alt="Nueva York" />
+          <div class="px-6 py-4">
+            <div class="mb-2 text-xl font-bold">New York</div>
+            <p class="text-base text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-sm overflow-hidden rounded shadow-lg">
+          <img class="w-full" src="./img/chicago.jpg" alt="Chicago" />
+          <div class="px-6 py-4">
+            <div class="mb-2 text-xl font-bold">Chicago</div>
+            <p class="text-base text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-sm overflow-hidden rounded shadow-lg">
+          <img class="w-full" src="./img/california.jpg" alt="California" />
+          <div class="px-6 py-4">
+            <div class="mb-2 text-xl font-bold">California</div>
+            <p class="text-base text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMISSIONS SECTION -->
+    <section
+      class="flex h-[500px] w-full flex-col items-start justify-center gap-4 bg-gradient-to-r from-green-500 to-white p-4"
+    >
+      <h2 class="text-3xl font-bold text-white">
+        Save upto 50% on broker commissions
+      </h2>
+      <p class="text-2xl text-white">Lowest Brokerage Fees</p>
+      <a
+        href="#"
+        class="rounded-2xl border-2 border-black bg-white px-8 py-4 font-bold text-black transition-all duration-200 hover:bg-green-300 hover:text-green-700"
+        >ENQUIRE</a
+      >
+    </section>
+
+    <!-- CLIENTS SECTION -->
+    <section
+      class="mx-auto flex w-[75%] flex-col items-center justify-center gap-20 p-4"
+    >
+      <h2 class="text-4xl text-gray-500">What clients say about us?</h2>
+      <div class="flex items-stretch gap-30 sm:flex-col lg:flex-row">
+        <div
+          class="flex flex-col items-center justify-center gap-2 rounded-2xl p-4 shadow-2xl"
+        >
+          <p>
+            <b class="text-green-500">" </b>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dicta dolores sed laboriosam
+            voluptatem repudiandae molestiae nisi iusto quibusdam ullam
+            doloremque<b class="text-green-500"> "</b>
+          </p>
+          <div
+            class="flex w-full flex-row items-center justify-start gap-4 overflow-hidden rounded-4xl bg-green-100"
+          >
+            <img src="./img/avatar.png" alt="Avatar" />
+            <div class="flex flex-col gap-2">
+              <h3 class="text-green-500">Ashutosh</h3>
+              <h4>Director</h4>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-2 rounded-2xl p-4 shadow-2xl"
+        >
+          <p>
+            <b class="text-green-500">" </b>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dicta dolores sed laboriosam
+            voluptatem repudiandae molestiae nisi iusto quibusdam ullam
+            doloremque<b class="text-green-500"> "</b>
+          </p>
+          <div
+            class="flex w-full flex-row items-center justify-start gap-4 overflow-hidden rounded-4xl bg-green-100"
+          >
+            <img src="./img/avatar.png" alt="Avatar" />
+            <div class="flex flex-col gap-2">
+              <h3 class="text-green-500">Ashutosh</h3>
+              <h4>Director</h4>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-2 rounded-2xl p-4 shadow-2xl"
+        >
+          <p>
+            <b class="text-green-500">" </b>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dicta dolores sed laboriosam
+            voluptatem repudiandae molestiae nisi iusto quibusdam ullam
+            doloremque<b class="text-green-500"> "</b>
+          </p>
+          <div
+            class="flex w-full flex-row items-center justify-start gap-4 overflow-hidden rounded-4xl bg-green-100"
+          >
+            <img src="./img/avatar.png" alt="Avatar" />
+            <div class="flex flex-col gap-2">
+              <h3 class="text-green-500">Ashutosh</h3>
+              <h4>Director</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT US SECTION TITLE -->
+    <div class="mx-auto flex items-center justify-center text-center">
+      <h2 class="text-4xl text-gray-500">Contact us</h2>
+    </div>
+    <!-- CONTACT US SECTION -->
+    <section
+      class="relative flex flex-col items-center justify-center gap-0 bg-green-300 p-4"
+    >
+      <form action="" class="flex flex-col gap-4 p-4">
+        <div class="flex flex-row gap-4">
+          <div class="flex flex-col gap-2">
+            <label for="name">FIRST NAME</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Jane"
+              class="rounded-sm bg-white p-4 focus:border-b-blue-500"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="name">LAST NAME</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Ford"
+              class="rounded-sm bg-white p-4 focus:border-b-blue-500"
+            />
+          </div>
+        </div>
+
+        <label for="email">EMAIL</label>
+        <input
+          type="email"
+          name=""
+          id="email"
+          class="rounded-sm bg-white p-4 focus:border-b-blue-500"
+          placeholder="example@example.com"
+        />
+
+        <label for="message">MESSAGE</label>
+        <textarea
+          name=""
+          id="message"
+          class="rounded-sm bg-white p-4 focus:border-b-blue-500"
+          placeholder="example@example.com"
+        ></textarea>
+
+        <input
+          type="submit"
+          value="Send"
+          class="w-[30%] rounded-sm bg-green-500 p-4 text-white transition-all duration-200 hover:bg-white hover:text-black"
+        />
+      </form>
+
+      <footer
+        class="absolute top-115 flex w-full sm:flex-col lg:flex-row justify-between bg-green-500 p-12 sm:items-center lg:items-start gap-12"
+      >
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row items-center gap-4">
+            <img src="./img/icon-phone.svg" alt="Teléfono" />
+            <p class="text-white">+1-543-123-4567</p>
+          </div>
+          <div class="flex flex-row items-center gap-4">
+            <img src="./img/icon-email.svg" alt="Email/correo" />
+            <p class="text-white">example@example.com</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-20">
+          <div class="flex flex-col gap-4 text-white">
+            <a href="#">About</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="flex flex-col gap-4 text-white">
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-8">
+          <img src="./img/facebook.svg" alt="Facebook" class="cursor-pointer transition-all duration-200 bg-transparent hover:bg-black p-1.5 rounded-4xl">
+          <img src="./img/twitter.svg" alt="Twitter" class="cursor-pointer transition-all duration-200 bg-transparent hover:bg-black p-1.5 rounded-4xl">
+          <img src="./img/instagram.svg" alt="Instagram" class="cursor-pointer transition-all duration-200 bg-transparent hover:bg-black p-1.5 rounded-4xl">
+        </div>
+      </footer>
+    </section>
+
+    <!-- SECOND FOOTER? -->
+     <footer class="sm:mt-120 lg:mt-70 p-4 border-t text-center flex items-center justify-center w-full">
+      <p class="text-green-500">ANA FUENTES -- 2º DAW -- @Copyright 2025</p>
+     </footer>
+
+     <script src="main.js"></script>
+  </body>
+</html>
